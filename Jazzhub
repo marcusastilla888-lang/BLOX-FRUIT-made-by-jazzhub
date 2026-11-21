@@ -1,14 +1,19 @@
-wait(1)
-
-if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Jazz hub", "Ocean")
 
 --MAIN--
-
 local Main = Window:NewTab("Auto farm")
 local Section = Main:NewSection("Main")
+
 
 MainSection:NewButton("Auto farm", "It helps you get levels without doing anything", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/mJisB7cf"))()
 end)
 
+MainSection:NewToggle("Noting here", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
