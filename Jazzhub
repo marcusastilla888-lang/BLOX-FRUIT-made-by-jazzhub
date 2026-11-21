@@ -10,10 +10,12 @@ MainSection:NewButton("Auto farm", "It helps you get levels without doing anythi
     loadstring(game:HttpGet("https://pastebin.com/raw/mJisB7cf"))()
 end)
 
-MainSection:NewToggle("Noting here", "ToggleInfo", function(state)
+MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
     if state then
-        print("Toggle On")
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
     else
-        print("Toggle Off")
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     end
 end)
