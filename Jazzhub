@@ -7,7 +7,7 @@ local Section = Main:NewSection("Main")
 
 
 MainSection:NewButton("Auto farm", "It helps you get levels without doing anything", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/mJisB7cf"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/huy384/redzHub/refs/heads/main/redzHub.lua"))()
 end)
 
 MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
